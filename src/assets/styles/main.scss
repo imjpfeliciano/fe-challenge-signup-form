@@ -1,6 +1,8 @@
 $salmon: hsl(0, 100%, 74%);
 $blue: hsl(248, 32%, 49%);
 $green: hsl(154, 59%, 51%);
+$border: hsl(246, 25%, 77%);
+$placeholder: hsl(249, 10%, 26%);
 
 body {
   background-color: $salmon;
@@ -12,6 +14,7 @@ body {
   align-items: center;
 
   font-family: "Poppins";
+  margin: 0;
 }
 
 .container {
@@ -82,7 +85,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 
-  color: gray;
+  color: $border;
 
   display: flex;
   flex-direction: column;
@@ -94,12 +97,13 @@ body {
 }
 
 .input-field {
-  border: 1px solid #ddd;
+  border: 1px solid $border;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 5px;
   margin: 0.5rem 1rem;
   font-weight: bold;
+  color: $placeholder;
 
   &.error {
     border: 0;
@@ -113,7 +117,7 @@ body {
 
   &:focus {
     border: 0;
-    outline: 1px solid #ddd;
+    outline: 1px solid $border;
   }
 }
 
