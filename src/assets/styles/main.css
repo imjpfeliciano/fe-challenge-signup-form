@@ -1,0 +1,153 @@
+body {
+  background-color: hsl(0deg, 100%, 74%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.container {
+  background-image: url("../images/bg-intro-mobile.png");
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0deg, 100%, 74%);
+  width: 90%;
+  color: white;
+}
+@media (min-width: 768px) {
+  .container {
+    background-image: url("../images/bg-intro-desktop.png");
+    flex-direction: row;
+    max-width: 850px;
+    justify-content: space-around;
+  }
+}
+
+.side-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .side-container {
+    width: 400px;
+  }
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.pricing {
+  background-color: hsl(248deg, 32%, 49%);
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.bold {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.form-container {
+  width: 100%;
+  background-color: white;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.input-field {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  margin: 0.5rem 1rem;
+  font-weight: bold;
+}
+.input-field.error {
+  border: 0;
+  outline: 2px solid hsl(0deg, 100%, 74%);
+  color: hsl(0deg, 100%, 74%);
+}
+.input-field.error::-moz-placeholder {
+  color: transparent;
+}
+.input-field.error:-ms-input-placeholder {
+  color: transparent;
+}
+.input-field.error::placeholder {
+  color: transparent;
+}
+.input-field:focus {
+  border: 0;
+  outline: 1px solid #ddd;
+}
+
+.error-message {
+  margin: 0.5rem 1rem;
+  font-size: 10px;
+  font-weight: bold;
+  color: hsl(0deg, 100%, 74%);
+  text-align: right;
+}
+
+.submit {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  background-color: hsl(154deg, 59%, 51%);
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.submit:hover {
+  opacity: 0.8;
+}
+
+.terms-and-services {
+  text-align: center;
+  font-size: 12px;
+  margin: 0.5rem 1rem;
+}
+
+.link {
+  color: hsl(0deg, 100%, 74%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

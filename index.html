@@ -1,42 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/assets/styles/main.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  Learn to code by watching others
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-container">
+        <div>
+          <h2 class="title">Learn to code by watching others</h2>
+          <p class="description">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+      </div>
+      <div class="side-container">
+        <div class="pricing">
+          <span class="bold">Try it free 7 days</span> then $20/mo. thereafter
+        </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+        <div class="form-container">
+          <input
+            type="text"
+            class="input-field"
+            id="name"
+            placeholder="First Name"
+          />
+          <!-- <span class="error-message">First Name cannot be empty</span> -->
+          <input
+            type="text"
+            class="input-field"
+            id="last"
+            placeholder="Last Name"
+          />
+          <input
+            type="text"
+            class="input-field"
+            id="email"
+            placeholder="Email Address"
+          />
+          <input
+            type="password"
+            class="input-field"
+            id="password"
+            placeholder="Password"
+          />
 
-  Try it free 7 days then $20/mo. thereafter
+          <button class="submit" id="submit">claim your free trial</button>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+          <p class="terms-and-services">
+            By clicking the button, you are agreeing to our
+            <a href="#" class="link">Terms and Services </a>
+          </p>
+        </div>
+      </div>
+    </div>
 
-  Claim your free trial 
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <!-- import javascript -->
+    <script type="text/javascript" src="./src/assets/js/main.js"></script>
+  </body>
 </html>
